@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Bootstrap CDN link. -->
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  	<!-- CSS file link. -->
+  	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<title>Hangman Game</title>
+</head>
+<body>
+	<div class="container">
+		<div class="row text-center">
+			<div class="col-md-8 col-md-offset-2">
+				<h1 class="titles">HANGMAN GAME</h1>
+			</div>
+		</div>
+
+		<div class="row text-center" id="artist-name"></div>
+
+		<div class="row">
+			<div class="col-md-3 col-md-offset-2">
+				<audio id= "music" autoplay="true" src="">
+			</div>
+			<div class="col-md-4 col-md-offset-1 text-center" id="score-screen">
+			<div class="score-board">
+				<p class="begin">Press a key to start game.</p>
+				<p class="hint">Hint: Name of a singer</p>
+				Wins<p id="win-count">0</p>
+				Current word<p id="current-word"></p>
+				Number of guesses remaining<p id="no-guess">12</p>
+				Letters already guessed<p id="guessed-letters"></p>
+			</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="assets/javascript/game.js"></script>
+</body>
+</html>
